@@ -1,0 +1,15 @@
+# https://developer.hashicorp.com/nomad/tutorials/enterprise/production-deployment-guide-vm-with-consul
+data_dir  = "/var/lib/nomad/client/data"
+
+client {
+  enabled = true
+  servers = [
+    __SERVERS__
+  ]
+}
+
+ports {
+  http = 4649
+  rpc  = 4650
+  serf = 4651
+}

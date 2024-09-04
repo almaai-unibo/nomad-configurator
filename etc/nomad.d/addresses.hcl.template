@@ -1,0 +1,5 @@
+addresses {
+    http = "__HTTP_IP__"
+    rpc = "__RPC_IP__"
+    serf = "__SERF_IP__"
+}
